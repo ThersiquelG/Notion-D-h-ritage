@@ -5,6 +5,7 @@ public class Librairie {
 	public static void main(String[] args) {
 		Livre CallOfCthuluh = new Livre();
 		Clients Greg = new Clients();
+		BD Naheulbeuk = new BD();
 		// TODO Auto-generated method stub
 		Greg.setNom("Mr.Thersiquel");
 		Greg.setPrénom("Greg");
@@ -40,6 +41,25 @@ public class Librairie {
 			System.out.println("A été reservé par : " + Greg.getNom() + Greg.getPrénom());
 		}
 		
+		
+		System.out.println("************");
+		System.out.println("************");
+		
+		//BD
+		Naheulbeuk.setTitre("Les arcanes de Naheulbeuk");
+		Naheulbeuk.setAuteur("Lang John");
+		Naheulbeuk.setDessinateur("Poinsot Marion");
+		Naheulbeuk.setEditeur("Glenat");
+		Naheulbeuk.setPrix(9.99);
+		Naheulbeuk.setDisponibilite(true);
+		
+		if(Naheulbeuk.disponibilite == true) {
+			System.out.println("La BD :" + Naheulbeuk.getTitre());
+			System.out.println("Ecrite et dessinée par " + Naheulbeuk.getAuteur() + " Et " + Naheulbeuk.getDessinateur());
+			System.out.println("Editée par " + Naheulbeuk.getEditeur());
+			System.out.println("Au prix de " + Naheulbeuk.getPrix());
+			System.out.println("Est actuellement disponible");
+		}
 
 	}
 
